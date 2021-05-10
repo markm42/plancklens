@@ -17,7 +17,7 @@ The –-user is required only if you don’t have write permission to your main 
 
 This code contains most of the Planck 2018 lensing pipeline. In particular it possible to reproduce the published map and band-powers basically exactly. 
 
-Some parts of the pipeline have been left out or are not yet translated to python 3. This is the case notably of the band-powers likelihood code, or the code used to produce lensed CMB skies. 
+Some parts of the pipeline have been left out or are not yet translated to python 3. This is the case notably of the band-powers likelihood code, or the code used to produce lensed CMB skies (the latter code is the stand-alone package [lenspyx](https://github.com/carronj/lenspyx))
 
 ### Example parameter files
 
@@ -29,7 +29,7 @@ In order to reproduce the 2018 lensing maps and spectrum band-powers, one may us
 
 
 The basics on how to use parameter files can be found in [this jupyter notebook](examples/lensingrec_quickstart.ipynb).
-Some details on the numerical computations are collected [in this document](supplement.pdf).
+Some details on the numerical computations are collected [in this document](https://arxiv.org/abs/1908.02016).
 You might also need to check out the [plancklens documentation](https://plancklens.readthedocs.io/en/latest) (with some bits in progress).
 
 * Jan 14 2021: important bug fix in fortran N1 file affecting EB TB and TE. The n1 module must be rebuilt.
